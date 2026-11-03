@@ -58,6 +58,9 @@ jobs:
       - name: Gradle Build
         env:
           BUILD_PLUGIN: none
+          KEYSTORE_PASS: SwiftLink2026Key
+          ALIAS_NAME: swiftlink
+          ALIAS_PASS: SwiftLink2026Key
         run: |
           echo "sdk.dir=${ANDROID_HOME}" > local.properties
           echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
